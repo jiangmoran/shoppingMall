@@ -11,12 +11,12 @@ import javax.sql.DataSource;
 @SpringBootApplication
 public class ShoppingMallApplication {
 
-//    @Bean
-//    @ConfigurationProperties(prefix = "db")
-//    public DataSource dateSource() {
-//        DruidDataSource dataSource = new DruidDataSource();
-//        return dataSource;
-//    }
+    @Bean
+    @ConfigurationProperties(prefix = "db")
+    public DataSource dateSource() {
+        DruidDataSource dataSource = new DruidDataSource();
+        return dataSource;
+    }
 
     public static void main(String[] args) {
         SpringApplication.run(ShoppingMallApplication.class, args);
