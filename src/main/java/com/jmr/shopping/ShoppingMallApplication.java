@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Bean;
 import javax.sql.DataSource;
 
 @SpringBootApplication
-@MapperScan("cn.com.vicente.demo.mapper")
+@MapperScan("resources.mapper")
 public class ShoppingMallApplication {
 
 //    @Bean
